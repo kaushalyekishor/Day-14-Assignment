@@ -52,3 +52,15 @@ else
 	echo "invalid emailId"
 fi
 
+
+
+
+## String password code added
+#!/bin/bash -x
+read -p "Enter password: " pwd
+if [[ ${#pwd} -ge 8 && "$pwd" == *[[:lower:]]* && "$pwd" == *[[:upper:]]* && "$pwd" == *[0-9]* && "$pwd" == *[~@#%^-*+/]* ]]
+then
+	echo "valid password"
+else
+	echo "Invalid password"
+fi
