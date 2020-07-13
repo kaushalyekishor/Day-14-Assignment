@@ -23,3 +23,18 @@ then
 else
 	echo "Invalid name"
 fi
+
+
+
+
+## mobile number pattren code added
+#!/bin/bash -x
+read -p "enter mobile Number " mobNumber
+mobPattern="^[0-9]{2}[ ][0-9]{10}$"
+if [[ $mobNumber =~ $mobPattern ]]
+then
+	echo "Valid Mobile Number"
+else
+	echo "Invalid Mobile Number"
+fi
+
