@@ -9,3 +9,17 @@ then
 else
 	echo "Invalid Name"
 fi
+
+
+
+
+## last name Pattren code added
+#!/bin/bash -x
+read -p "enter last name: " lastName
+pat="^[[:upper:]]{1}[a-zA-Z]{2,}$"
+if [[ $lastName =~ $pat ]]
+then
+	echo "valid name"
+else
+	echo "Invalid name"
+fi
